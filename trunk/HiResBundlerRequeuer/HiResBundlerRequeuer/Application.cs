@@ -29,7 +29,7 @@ namespace HiResBundlerRequeuer
 
         void _RunRequeueLogic()
         {
-            Dictionary<int, AssetQueueInfo> assetMap = _queue.GetAssetsInQueue(ConnectionConfig.CONN_PROD);
+            Dictionary<int, AssetQueueInfo> assetMap = _queue.GetAssetsInQueue(ConnectionConfig.GetConnectionString());
 
             foreach (KeyValuePair<int, AssetQueueInfo> kvp in assetMap)
             {
@@ -53,7 +53,7 @@ namespace HiResBundlerRequeuer
 
                 if (shouldRequeue)
                 {
-                    _queue.RequeueAsset(info, ConnectionConfig.CONN_PROD);
+                    _queue.RequeueAsset(info, ConnectionConfig.GetConnectionString());
                 }
             }
         }

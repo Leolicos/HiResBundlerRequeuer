@@ -10,15 +10,25 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Dev|Any CPU = Dev|Any CPU
+		QAAzure|Any CPU = QAAzure|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{366ABDF2-5804-4D50-A7BC-8593EA5EEBE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{366ABDF2-5804-4D50-A7BC-8593EA5EEBE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{366ABDF2-5804-4D50-A7BC-8593EA5EEBE1}.Dev|Any CPU.ActiveCfg = Dev|Any CPU
+		{366ABDF2-5804-4D50-A7BC-8593EA5EEBE1}.Dev|Any CPU.Build.0 = Dev|Any CPU
+		{366ABDF2-5804-4D50-A7BC-8593EA5EEBE1}.QAAzure|Any CPU.ActiveCfg = QAAzure|Any CPU
+		{366ABDF2-5804-4D50-A7BC-8593EA5EEBE1}.QAAzure|Any CPU.Build.0 = QAAzure|Any CPU
 		{366ABDF2-5804-4D50-A7BC-8593EA5EEBE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{366ABDF2-5804-4D50-A7BC-8593EA5EEBE1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{94990F95-838C-4E5A-AFD0-D31769E7D455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{94990F95-838C-4E5A-AFD0-D31769E7D455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94990F95-838C-4E5A-AFD0-D31769E7D455}.Dev|Any CPU.ActiveCfg = Dev|Any CPU
+		{94990F95-838C-4E5A-AFD0-D31769E7D455}.Dev|Any CPU.Build.0 = Dev|Any CPU
+		{94990F95-838C-4E5A-AFD0-D31769E7D455}.QAAzure|Any CPU.ActiveCfg = QAAzure|Any CPU
+		{94990F95-838C-4E5A-AFD0-D31769E7D455}.QAAzure|Any CPU.Build.0 = QAAzure|Any CPU
 		{94990F95-838C-4E5A-AFD0-D31769E7D455}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94990F95-838C-4E5A-AFD0-D31769E7D455}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

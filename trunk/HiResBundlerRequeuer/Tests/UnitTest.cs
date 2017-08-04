@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using HiResBundlerRequeuer;
 
 namespace Tests
 {
@@ -12,7 +13,7 @@ namespace Tests
             try
             {
                 HiResBundlerRequeuer.BundlerQueueHelper queue = new HiResBundlerRequeuer.BundlerQueueHelper();
-                var list = queue.GetAssetsInQueue(HiResBundlerRequeuer.ConnectionConfig.CONN_PROD);
+                var list = queue.GetAssetsInQueue(ConnectionConfig.GetConnectionString());
 
                 Assert.AreNotEqual(list, null);
             }
@@ -28,10 +29,10 @@ namespace Tests
             try
             {
                 HiResBundlerRequeuer.BundlerQueueHelper queue = new HiResBundlerRequeuer.BundlerQueueHelper();
-                var list = queue.GetAssetsInQueue(HiResBundlerRequeuer.ConnectionConfig.CONN_PROD);
+                var list = queue.GetAssetsInQueue(ConnectionConfig.GetConnectionString());
 
                 if ( list.Count > 0 )
-                    queue.RequeueAsset(list[0], HiResBundlerRequeuer.ConnectionConfig.CONN_PROD);
+                    queue.RequeueAsset(list[0], ConnectionConfig.GetConnectionString());
             }
             catch (Exception ex)
             {
